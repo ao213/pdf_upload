@@ -78,7 +78,7 @@ class Application(tk.Frame):
         drive_file_name = self.file_name.get()
         directory_name = self.directory_name
         ##google-driveのファイルID##
-        folder_id = '1cM1sdUliBTIz2giekSskzVjYx8wI7Q_T'
+        folder_id = '**********'
         G_file = self.drive.CreateFile({'title':drive_file_name, 'mimeType':'application/pdf', "parents":[{"id":folder_id}]})
         G_file.SetContentFile(directory_name)
         G_file.Upload()
